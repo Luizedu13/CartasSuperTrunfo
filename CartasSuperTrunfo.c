@@ -58,11 +58,17 @@ int main() {
     printf("Carta 2:\n");
     printf("Estado: B\n");
     printf("Código: A02\n");
-
+    
+    // Limpeza pois quando criei ia lixo para o p turisticos
+    getchar();
+    
     // Solicita a cidade usando fgets para le	qr até o final, pois quando usei o Scanf ao colocar "São Paulo" ele não lia até o final.
     printf("Escreva a Cidade:\n");
     fgets(cidade2, sizeof(cidade2), stdin);
     cidade2[strcspn(cidade2, "\n")] = 0; 
+
+        // Limpeza pois quando criei ia lixo para o p turisticos
+    getchar();
 
     // Solicita a população e armazena na variavel população
     printf("Escreva a Populacao:\n");
