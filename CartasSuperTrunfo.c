@@ -15,7 +15,7 @@ int main() {
 
     // Cadastro das informações da Carta 01
 
-    printf("Carta 1:\n");
+    printf("\n\nCarta 1:\n");
     printf("Estado: A\n");
     printf("Código: A01\n");
 
@@ -48,7 +48,7 @@ int main() {
     ppc1 = pib1 / populacao1;
 
     // Cadastro das informações da Carta 02
-    printf("Carta 2:\n");
+    printf("\n\nCarta 2:\n");
     printf("Estado: B\n");
     printf("Código: A02\n");
     
@@ -86,7 +86,7 @@ int main() {
     printf("-------------------------------------\n");
 
     // Exibe as informações preenchidas anteriormente na Carta 01
-    printf("Carta 1:\n"); // Mostra a Carta 1
+    printf("\n\nCarta 1:\n"); // Mostra a Carta 1
     printf("Estado: A\n"); // Mostra o Estado A
     printf("Código: A01\n"); // Mostra o Código
     printf("Nome da Cidade: %s\n", cidade1); // Mostra a cidade cadastrada
@@ -98,7 +98,7 @@ int main() {
     printf("PIB per Capita: %.2f Reais", ppc1);
 
     // Exibe as informações preenchidas anteriormente na Carta 02
-    printf("Carta 2:\n"); // Mostra a Carta 2
+    printf("\n\nCarta 2:\n"); // Mostra a Carta 2
     printf("Estado: B\n"); // Mostra Estado B
     printf("Código: A02\n"); // Mostra o Código 
     printf("Nome da Cidade: %s\n", cidade2); // Mostra a cidade cadastrada
