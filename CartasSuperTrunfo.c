@@ -27,12 +27,9 @@ int main() {
     fgets(cidade1, sizeof(cidade1), stdin);
     cidade1[strcspn(cidade1, "\n")] = 0; 
 
-    // Limpeza 
-    getchar();
-
     // Solicita a população e armazena na variavel população
     printf("Escreva a Populacao:\n");
-    scanf("%d", &populacao1);  
+    scanf(" %d", &populacao1);  
 
     // Limpeza 
     getchar();
