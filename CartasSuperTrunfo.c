@@ -31,42 +31,28 @@ int main() {
     printf("Escreva a Populacao:\n");
     scanf(" %d", &populacao1);  
 
-    // Limpeza 
-    getchar();
-
     // Solicita a área e armazena na variavel area
     printf("Escreva Area (Km²):\n");
     scanf("%f", &area1);  
-
-    // Limpeza 
-    getchar();
 
     // Solicita o PIB e armazena na variavel pib
     printf("Escreva o PIB (Em Bilhões):\n");
     scanf("%f", &pib1);  
 
-    // Limpeza 
-    getchar();
-
     // Solicita a quantidade de pontos turísticos e armazena na variavel Turistico
     printf("Quantidade de Pontos Turísticos:\n");
     scanf("%d", &turistico1);  
-
-    // Limpeza 
-    getchar();
 
     // Variaveis para calcular densidade populacional e calcula pib per capita
     dens1 = (float) populacao1 / area1;
     ppc1 = pib1 / populacao1;
 
-
     // Cadastro das informações da Carta 02
-
     printf("Carta 2:\n");
     printf("Estado: B\n");
     printf("Código: A02\n");
     
-    // Limpeza pois quando criei ia lixo para o p turisticos
+    // Limpeza 
     getchar();
     
     // Solicita a cidade usando fgets para le	qr até o final, pois quando usei o Scanf ao colocar "São Paulo" ele não lia até o final.
@@ -74,29 +60,17 @@ int main() {
     fgets(cidade2, sizeof(cidade2), stdin);
     cidade2[strcspn(cidade2, "\n")] = 0; 
 
-        // Limpeza pois quando criei ia lixo para o p turisticos
-    getchar();
-
     // Solicita a população e armazena na variavel população
     printf("Escreva a Populacao:\n");
     scanf("%d", &populacao2);  
-
-    // Limpeza pois quando criei ia lixo para a área
-    getchar();
 
     // Solicita a área e armazena na variavel area
     printf("Escreva Area (Km²):\n");
     scanf("%f", &area2);  
 
-    // Limpeza pois quando criei ia lixo para o PIB
-    getchar();
-
     // Solicita o PIB e armazena na variavel pib
     printf("Escreva o PIB (Em Bilhões):\n");
     scanf("%f", &pib2);  
-
-    // Limpeza pois quando criei ia lixo para o p turisticos
-    getchar();
 
     // Solicita a quantidade de pontos turísticos e armazena na variavel Turistico
     printf("Quantidade de Pontos Turísticos:\n");
