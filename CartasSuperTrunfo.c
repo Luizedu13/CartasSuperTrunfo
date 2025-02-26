@@ -5,7 +5,7 @@ int main() {
     // variáveis usadas no programa
     char cidade1[30], cidade2[30];
     int populacao1, populacao2, turistico1, turistico2;
-    float , area1, area2,pib1, pib2, dens1, dens2, ppc1, ppc2;
+    float area1, area2,pib1, pib2, dens1, dens2, ppc1, ppc2;
    
 
     // Imprime cabeçalho, para fazer uma graça
