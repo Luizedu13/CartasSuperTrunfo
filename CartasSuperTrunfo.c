@@ -4,9 +4,9 @@ int main() {
 
     // variáveis usadas no programa
     char cidade1[30], cidade2[30];
-    float populacao1, populacao2, area1, area2, dens1, dens2, ppc1, ppc2;
-    double pib1, pib2; 
-    int turistico1, turistico2;
+    int populacao1, populacao2, turistico1, turistico2;
+    float , area1, area2,pib1, pib2, dens1, dens2, ppc1, ppc2;
+   
 
     // Imprime cabeçalho, para fazer uma graça
     printf("-------------------------------------\n");
@@ -27,36 +27,39 @@ int main() {
     fgets(cidade1, sizeof(cidade1), stdin);
     cidade1[strcspn(cidade1, "\n")] = 0; 
 
+    // Limpeza 
+    getchar();
+
     // Solicita a população e armazena na variavel população
     printf("Escreva a Populacao:\n");
-    scanf("%f", &populacao1);  
+    scanf("%d", &populacao1);  
 
-    // Limpeza pois quando criei ia lixo para a área
+    // Limpeza 
     getchar();
 
     // Solicita a área e armazena na variavel area
     printf("Escreva Area (Km²):\n");
     scanf("%f", &area1);  
 
-    // Limpeza pois quando criei ia lixo para o PIB
+    // Limpeza 
     getchar();
 
     // Solicita o PIB e armazena na variavel pib
     printf("Escreva o PIB (Em Bilhões):\n");
-    scanf("%lf", &pib1);  
+    scanf("%f", &pib1);  
 
-    // Limpeza pois quando criei ia lixo para o p turisticos
+    // Limpeza 
     getchar();
 
     // Solicita a quantidade de pontos turísticos e armazena na variavel Turistico
     printf("Quantidade de Pontos Turísticos:\n");
-    scanf("%d\n", &turistico1);  
+    scanf("%d", &turistico1);  
 
-    // Limpeza pois quando criei ia lixo para o p turisticos
+    // Limpeza 
     getchar();
 
     // Variaveis para calcular densidade populacional e calcula pib per capita
-    dens1 = populacao1 / area1;
+    dens1 = (float) populacao1 / area1;
     ppc1 = pib1 / populacao1;
 
 
@@ -79,7 +82,7 @@ int main() {
 
     // Solicita a população e armazena na variavel população
     printf("Escreva a Populacao:\n");
-    scanf("%f", &populacao2);  
+    scanf("%d", &populacao2);  
 
     // Limpeza pois quando criei ia lixo para a área
     getchar();
@@ -93,7 +96,7 @@ int main() {
 
     // Solicita o PIB e armazena na variavel pib
     printf("Escreva o PIB (Em Bilhões):\n");
-    scanf("%lf", &pib2);  
+    scanf("%f", &pib2);  
 
     // Limpeza pois quando criei ia lixo para o p turisticos
     getchar();
@@ -103,7 +106,7 @@ int main() {
     scanf("%d", &turistico2);  
 
     // Variaveis para calcular densidade populacional e calcula pib per capita
-    dens2 = populacao2 / area2;
+    dens2 = (float) populacao2 / area2;
     ppc2 = pib2 / populacao2;
 
     // Imprime os dados para cabeçalho
@@ -116,7 +119,7 @@ int main() {
     printf("Estado: A\n"); // Mostra o Estado A
     printf("Código: A01\n"); // Mostra o Código
     printf("Nome da Cidade: %s\n", cidade1); // Mostra a cidade cadastrada
-    printf("População: %2.f\n", populacao1); // Mostra a população cadastrada
+    printf("População: %d\n", populacao1); // Mostra a população cadastrada
     printf("Área: %.2f Km²\n", area1);  // Mostra área cadastrada com 2 casas decimais 
     printf("PIB: %.2f bilhões de Reais\n", pib1);  // Mostra o PIB cadastrado com 2 casas decimais
     printf("Número de Pontos Turísticos: %d\n", turistico1);  // Mostra a Quantidade de pontos turísticos cadastrado
@@ -128,7 +131,7 @@ int main() {
     printf("Estado: B\n"); // Mostra Estado B
     printf("Código: A02\n"); // Mostra o Código 
     printf("Nome da Cidade: %s\n", cidade2); // Mostra a cidade cadastrada
-    printf("População: %2.f\n", populacao2); // Mostra a população cadastrada
+    printf("População: %d\n", populacao2); // Mostra a população cadastrada
     printf("Área: %.2f Km²\n", area2);  // Mostra área cadastrada com 2 casas decimais 
     printf("PIB: %.2f bilhões de Reais\n", pib2);  // Mostra o PIB cadastrado com 2 casas decimais
     printf("Número de Pontos Turísticos: %d\n", turistico2);  // Mostra a Quantidade de pontos turísticos cadastrado
