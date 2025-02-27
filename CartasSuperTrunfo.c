@@ -113,16 +113,12 @@ int main() {
     printf("PIB: %.2f bilhões de Reais\n", pib2);  // Mostra o PIB cadastrado com 2 casas decimais
     printf("Número de Pontos Turísticos: %d\n", turistico2);  // Mostra a Quantidade de pontos turísticos cadastrado
 
-
-    // Limpeza
-    getchar();
-
     // Imprime os dados para cabeçalho para Comparações das cartas
     printf("\n\n-------------------------------------\n");
     printf("          Comparação de Cartas\n");
     printf("-------------------------------------\n\n");
 
-    // Imprimi os dados para comparação das cartas e mostra as informações de qual venceu
+    // Imprime os dados para comparação das cartas e mostra as informações de qual venceu
     printf("População: Carta %d venceu (%d)\n", populacao1 > populacao2 ? 1 : 2, populacao1 > populacao2);
     printf("Área: Carta %d venceu (%d)\n", area1 > area2 ? 1 : 2, area1 > area2);
     printf("PIB: Carta %d venceu (%d)\n", pib1 > pib2 ? 1 : 2, pib1 > pib2);
